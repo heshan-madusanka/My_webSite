@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | KDSHM Perera</title>
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to your separate CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="font-bold text-xl tracking-tight text-slate-800">
+                HESHAN <span class="text-blue-600">MADUSANKA</span>
+            </div>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="#home" class="nav-link px-1 py-5 transition-colors hover:text-blue-600">Home</a>
+                <a href="#profile" class="nav-link px-1 py-5 transition-colors hover:text-blue-600">Profile</a>
+                <a href="#research" class="nav-link px-1 py-5 transition-colors hover:text-blue-600">Research</a>
+                <a href="#publications" class="nav-link px-1 py-5 transition-colors hover:text-blue-600">Publications</a>
+                <a href="#proposals" class="nav-link px-1 py-5 transition-colors hover:text-blue-600">Proposals</a>
+                <a href="#moments" class="nav-link px-1 py-5 transition-colors hover:text-blue-600">Moments</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-600" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-4 shadow-lg">
+            <a href="#home" class="block font-medium hover:text-blue-600" onclick="toggleMobileMenu()">Home</a>
+            <a href="#profile" class="block font-medium hover:text-blue-600" onclick="toggleMobileMenu()">Profile</a>
+            <a href="#research" class="block font-medium hover:text-blue-600" onclick="toggleMobileMenu()">Research</a>
+            <a href="#publications" class="block font-medium hover:text-blue-600" onclick="toggleMobileMenu()">Publications</a>
+            <a href="#proposals" class="block font-medium hover:text-blue-600" onclick="toggleMobileMenu()">Proposals</a>
+            <a href="#moments" class="block font-medium hover:text-blue-600" onclick="toggleMobileMenu()">Moments</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="pt-24 pb-20 max-w-6xl mx-auto px-4">
+        
+        <section id="home" class="page-section">
+            <div class="py-12 border-b border-slate-200">
+                <h1 class="text-4xl md:text-3xl font-bold text-slate-700 mb-6 italic uppercase">"Nature is the best engineer, and robotics is, at its core,<br>
+                    the art of learning from life."</h1>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <p class="text-xl text-slate-600 leading-relaxed mb-6">
+                        Much of engineering is the systematic translation of observations from natural systems into practical designs, and this conviction has defined my primary research interest: <strong>bio-inspired locomotion</strong>. I am driven to understand distinctive animal movement patterns and use those insights to design novel robotic mechanisms and control strategies. My work lives at the intersection of <strong>bio-inspired mechanisms and soft robotics</strong>, with a focus on dynamic modeling and control of unconventional locomotion and how nature's <strong>morphological intelligence</strong> can be translated into robotic systems to enhance adaptability in unstructured environments.
+                    </p>
+                    <p class="text-xl text-slate-600 leading-relaxed mb-6">
+                        Beyond individual platforms, I seek to scale these principles through <strong>swarm behavior</strong>, deploying decentralized collectives of bio-inspired robots to solve complex tasks in unpredictable, real-world settings. The goal is not merely to mimic nature, but to distill its deepest engineering principles into machines that move, adapt, and collaborate with the same quiet elegance found in living systems.
+                    </p>
+                    <div class="h-100 bg-slate-100 rounded-xl flex items-center justify-center border-2 border-dashed border-slate-300">
+                        <img 
+                            src="assets/images/intrest_01.jpg" 
+                            alt="Robotic Vision and Research" 
+                            class="w-full h-full object-cover"
+                            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200'"
+                        >
+                        <!--<span class="text-slate-400">Hero Image Area</span>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="page-section">
+            <div class="py-12">
+                <h1 class="text-4xl font-bold text-slate-900 mb-8">Profile & Academic Journey</h1>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 sticky top-28">
+                            <div class="w-32 h-32 bg-slate-200 rounded-full mx-auto mb-4 overflow-hidden">
+                                <img src="assets/images/profile.jpg" alt="Profile" class="w-full h-full object-cover">
+                            </div>
+                            <h2 class="text-center font-bold text-xl">K. D. S. H. M. Perera</h2>
+                            <h3 class="text-center font-bold text-xl">Heshan Madusanka</h3>
+                            <p class="text-center text-blue-600 font-medium">B.Sc. Engineering (Honours)</p>
+                            <!-- DOWNLOAD CV BUTTON -->
+                            <div class="mt-6">
+                                <a href="assets/docs/CV-HeshanM.pdf" download="KDS_Heshan_Perera_CV.pdf" class="flex items-center justify-center w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl transition-all duration-200 shadow-sm">
+                                    <i class="fas fa-file-pdf mr-2"></i>
+                                    Download Full CV
+                                </a>
+                            </div>
+                            <div class="mt-6 pt-6 border-t border-slate-100 space-y-2 text-sm">
+                                <p>
+                                    <i class="fas fa-envelope mr-2"></i> 
+                                    <a href="mailto:heshanmm@uom.lk">heshanmm@uom.lk</a>
+                                </p>
+                                <p>
+                                <i class="fab fa-linkedin mr-2" style="color: #0077B5;"></i> 
+                                <a href="https://www.linkedin.com/in/heshan-madusanka-539508238/" target="_blank">LinkedIn</a>
+                                </p>
+
+                                <p>
+                                <i class="fab fa-github mr-2" style="color: #333;"></i> 
+                                <a href="https://github.com/heshan-madusanka" target="_blank">GitHub</a>
+                                </p>
+
+                                <p>
+                                <i class="fab fa-youtube mr-2" style="color: #FF0000;"></i> 
+                                <a href="https://www.youtube.com/playlist?list=PLl5jQ-7RX5Uos_ClFR0Rcng8QjXXK8guf" target="_blank">YouTube</a>
+                                </p>
+
+                                <p>
+                                <i class="fas fa-graduation-cap mr-2" style="color: #4285F4;"></i> 
+                                <a href="https://scholar.google.com/citations?hl=en&user=dRZwajsAAAAJ" target="_blank">Google Scholar</a>
+                                </p>
+
+                                <p>
+                                <i class="fab fa-orcid mr-2" style="color: #A6CE39;"></i> 
+                                <a href="https://orcid.org/0009-0003-2340-0744" target="_blank">ORCID</a>
+                                </p>
+
+                                <p>
+                                <i class="fab fa-researchgate mr-2" style="color: #00CCBB;"></i> 
+                                <a href="https://www.researchgate.net/profile/K-D-S-H-M-Perera" target="_blank">ResearchGate</a>
+                                </p>
+                            </div>
+                            <!-- SKILLS SECTION -->
+                            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                                <h3 class="text-lg font-bold mb-4 text-slate-800 border-b pb-2">Technical Skills</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Programming</p>
+                                        <p class="text-sm text-slate-600">Python, C++, MATLAB, LabVIEW</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Robotics</p>
+                                        <p class="text-sm text-slate-600">ROS2, micro-ROS, Gazebo, MuJoCo, OpenCV</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Design & Analysis</p>
+                                        <p class="text-sm text-slate-600">SolidWorks, AutoCAD, Ansys, Adams</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Embedded Systems</p>
+                                        <p class="text-sm text-slate-600">Arduino, ESP32, Raspberry Pi, Proteus</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Web & Data</p>
+                                        <p class="text-sm text-slate-600">HTML, CSS, JavaScript, SQL, Flutter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+
+                    <div class="md:col-span-2 space-y-6">
+                        <!-- EDUCATION -->
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-6 text-slate-800">Education</h3>
+                            <div class="space-y-6">
+                                <div class="relative pl-6 border-l-2 border-slate-100">
+                                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-500 rounded-full border-2 border-white"></div>
+                                    <h4 class="font-bold text-slate-800">B.Sc. Engineering (Hons) in Mechanical Engineering</h4>
+                                    <p class="text-sm text-blue-600">2021 - 2025 | University of Moratuwa, Sri Lanka</p>
+                                    <p class="text-slate-600 mt-2 text-sm">Specialisation: Mechatronic Systems Engineering</p>
+                                    <p class="text-slate-600 mt-2 text-sm">GPA: 3.79/4.00 (Rank: 10/120)</p>
+                                    <p class="text-slate-600 mt-2 text-sm">Minor: Mathematics.</p>
+                                </div>
+                                <div class="relative pl-6 border-l-2 border-slate-100">
+                                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-2 border-white"></div>
+                                    <h4 class="font-bold text-slate-800">GCE Advanced Level (Physical Science)</h4>
+                                    <p class="text-sm text-slate-500">2017 - 2019 | D.S. Senanayake College, Colombo</p>
+                                    <p class="text-slate-600 mt-1 text-sm">Results: 2 A's & 1 B (Z-Score: 2.3409)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- WORK EXPERIENCE -->
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-6 text-slate-800">Work Experience</h3>
+                            <div class="space-y-8">
+                                <div class="flex gap-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-blue-50 flex items-center justify-center rounded-xl">
+                                        <i class="fas fa-chalkboard-teacher text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">Temporary Lecturer</h4>
+                                        <p class="text-sm text-slate-500">Feb 2025 - Present | University of Moratuwa, Sri Lanka</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-blue-50 flex items-center justify-center rounded-xl">
+                                        <i class="fas fa-chalkboard-teacher text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">Temporary Instructor</h4>
+                                        <p class="text-sm text-slate-500">Aug 2025– Jan 2026 | University of Moratuwa, Sri Lanka</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-50 flex items-center justify-center rounded-xl">
+                                        <i class="fas fa-microscope text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">Intern / Student Researcher</h4>
+                                        <p class="text-sm text-slate-500">Mar 2024 - May 2024 | Shandong University of Science & Tech, China</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-50 flex items-center justify-center rounded-xl">
+                                        <i class="fas fa-project-diagram text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">Intern / Project Engineer</h4>
+                                        <p class="text-sm text-slate-500">Nov 2023 - Feb 2024 | Dipped Product PLC, Sri Lanka</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECTS -->
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-6 text-slate-800">Academic & Industrial Projects</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Underwater Observation Drone</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Design & Development of shallow-sea underwater drone with novel fuzzy-adaptive sliding-mode controller and VR teleoperation interface.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Brachiating Robot</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Simulated and built gibbon-inspired robot to investigate dynamic locomotion across variable bars.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Modular Microconveyor</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Chevron electrothermal actuators for precise wafer-scale transportation.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Environment Monitoring Station</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Implemented real-time environmental monitoring with signal conditioning, processing, remote communication and data visualization (web/mobile).</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">App-Controlled Mobile Robot</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Developed a differential-drive mobile robot with image-based object detection, path planning, and manual/autonomous operation via a mobile app.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Micro-ROS Based Home Automation</h5>
+                                    <p class="text-xs text-slate-500 mt-1">development of an IoT smart-home prototype integrating micro-ROS for autonomous temperature-based fan control and web-based lighting/fan management.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Smart Garbage Collector</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Collaboratively engineered a mobile robot using image processing to autonomously navigate predefined routes and collect litter.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Web-Based SCADA</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Full-stack application for real-time dashboarding and historical data visualization.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Dynamic Work Bar Transfer Mechanism</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Designed a pneumatic system to halt and transfer work bars between leaching tanks.</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                    <h5 class="font-bold text-slate-800 text-sm">Hydraulic Lifting Platform</h5>
+                                    <p class="text-xs text-slate-500 mt-1">Researched and prototyped a hydraulic lift for wheelchair accessibility (Shandong University of Science and Technology).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACHIEVEMENTS & EXTRAS -->
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-6 text-slate-800">Achievements & Recognition</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
+                                    <span class="text-sm text-slate-600"><strong class="text-slate-800">Best Paper Award:</strong> Robotics & Intelligent Systems Track, MERCon 2025.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-award text-blue-500 mt-1 mr-3"></i>
+                                    <span class="text-sm text-slate-600"><strong class="text-slate-800">The Institution Best Project:</strong> IMechE - University of Moratuwa (2025).</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-orange-400 mt-1 mr-3"></i>
+                                    <span class="text-sm text-slate-600"><strong class="text-slate-800">Dean’s List:</strong> Awarded for Semesters 1, 2, 5, and 7.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="page-section">
+        <div class="py-12 max-w-6xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-slate-900 mb-12">Research</h1>
+            
+            <div class="space-y-16">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="w-full md:w-1/2">
+                        <div class="aspect-video bg-slate-900 rounded-2xl flex items-center justify-center group cursor-pointer overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <a href="https://youtu.be/tmqU-cF4NHA?si=1nVLGdKwFkZ8cjRW" target="_blank" class="group relative block aspect-video rounded-2xl overflow-hidden shadow-lg bg-slate-200">
+                                <img src="assets/images/WSRay.png" alt="Project Thumbnail" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                
+                                <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                                    <i class="fas fa-play text-white text-5xl drop-shadow-lg"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">WS-Ray - Underwater Drone</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            WS-Ray is a tethered underwater drone developed from first principles, designed for shallow sea coral observation. 
+                            Its hydrodynamic hull draws inspiration from the body shape of the whale shark, optimizing movement through aquatic 
+                            environments. The system features a 5-DOF motion capability achieved through a 6-thruster configuration, combined with 
+                            a tilt-controllable camera that together deliver a full 6-DOF viewing experience for the operator. For motion control, 
+                            a novel fuzzy adaptive sliding mode controller is employed, enabling robust and precise maneuvering in dynamic underwater 
+                            conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                    <div class="w-full md:w-1/2">
+                        <div class="relative aspect-video rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                        <a href="https://youtu.be/EnvlS8aXXzo?si=j-6d2t3kaX2W0XUG" target="_blank" class="group relative block aspect-video rounded-2xl overflow-hidden shadow-lg bg-slate-200">
+                            <img src="assets/images/brachiationBot.png" alt="Project Thumbnail" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                                <i class="fas fa-play text-white text-5xl drop-shadow-lg"></i>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Brachiation Robot</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Bio-inspired robotics draws from nature's solutions to locomotion, with brachiation robots replicating the swinging motion of 
+                            primates to navigate discontinuous structures. While many systems replicate the overarching motion, their control strategies 
+                            often rely on complex full-state regulation rather than exploiting natural dynamics. This work presents a simplified control 
+                            approach where only the reaching hand is actively guided toward the next target while the body swings passively, inspired by 
+                            gibbon behavior, reducing control complexity while maintaining adaptability to irregular bar spacing and varying heights.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-16">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="w-full md:w-1/2">
+                        <div class="aspect-video bg-slate-900 rounded-2xl flex items-center justify-center group cursor-pointer overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img 
+                                src="assets/images/mouseController.jpg"
+                                alt="mouseController">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Mouse-Form Auxiliary Controller for Teleoperation</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            This research is currently in progress. Additional details, data, and findings will be published here as the work advances.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <section id="publications" class="page-section">
+            <div class="py-12">
+                <h1 class="text-4xl font-bold text-slate-900 mb-8">Publications</h1>
+                <!---->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-4 py-2">
+                        <h3 class="font-bold text-lg text-slate-800">Brachiation Robot Inspired by Gibbon Dynamics: Insight for Control Across Irregular Bar Spacing and Heights</h3>
+                        <p class="text-slate-500 text-sm">Moratuwa Engineering Research Conference (MERCon 2025), Moratuwa, Sri Lanka.</p>
+                        <p class="text-slate-500 text-sm"><b>Best Paper Award: Robotics & Intelligent Systems</b></p>
+                        <p class="text-slate-500 text-sm">(First author \& presenter)</p>
+                        <p>
+                            <a href="https://doi.org/10.1109/MERCon67903.2025.11217001" target="_blank">DOI: 10.1109/MERCon67903.2025.11217001</a>
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-4 py-2">
+                        <h3 class="font-bold text-lg text-slate-800">A Fuzzy-Adaptive Sliding-Mode Control Strategy for Optimizing Control of an Underwater Drone</h3>
+                        <p class="text-slate-500 text-sm">Moratuwa Engineering Research Conference (MERCon 2025), Moratuwa, Sri Lanka.</p>
+                        <p class="text-slate-500 text-sm">(First author \& presenter)</p>
+                        <p>
+                            <a href="https://doi.org/10.1109/MERCon67903.2025.11217090" target="_blank">DOI: 10.1109/MERCon67903.2025.11217090</a>
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-4 py-2">
+                        <h3 class="font-bold text-lg text-slate-800">Development of Marine Grade Acrylonitrile – Butadiene – Styrene (ABS) based Hull of an Underwater Drone</h3>
+                        <p class="text-slate-500 text-sm">Moratuwa Engineering Research Conference (MERCon 2025), Moratuwa, Sri Lanka.</p>
+                        <p class="text-slate-500 text-sm">(First author)</p>
+                        <p>
+                            <a href="https://doi.org/10.1109/MERCon67903.2025.11217039" target="_blank">DOI: 10.1109/MERCon67903.2025.11217039</a>
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-4 py-2">
+                        <h3 class="font-bold text-lg text-slate-800">CFD-Driven Hydrodynamic Optimisation of a Whale Shark–Inspired Underwater Drone for Shallow Reef Observation</h3>
+                        <p class="text-slate-500 text-sm">12th International Conference on Heat Transfer and Fluid Flow (HTFF 2025).</p>
+                        <p class="text-slate-500 text-sm">(First author)</p>
+                        <p>
+                            <a href="https://www.bing.com/ck/a?!&&p=439d4e7db769d91709a8170908f92ca033743b39eba46d1c7dcd7d0d8f13801eJmltdHM9MTc2MDE0MDgwMA&ptn=3&ver=2&hsh=4&fclid=1f9e64db-a19c-6c89-126a-7288a0076dbc&psq=CFD-Driven+Hydrodynamic+Optimisation+of+a+Whale+Shark%e2%80%93Inspired+Underwater+Drone+for+Shallow+Reef+Observation&u=a1aHR0cHM6Ly9hdmVzdGlhLmNvbS9NQ00yMDI1X1Byb2NlZWRpbmdzL2ZpbGVzL3BhcGVyL0hURkYvSFRGRl8yNDMucGRmIzp-OnRleHQ9QWJzdHJhY3QlMjAtJTIwVGhpcyUyMHN0dWR5JTIwcHJlc2VudHMlMjB0aGUlMjBkZXNpZ24lMjBhbmQsd2hhbGUlMjBzaGFyayUyQyUyMGFuZCUyMHR1bmElRTIlODAlOTN3ZXJlJTIwZmlyc3QlMjBzY3JlZW5lZCUyMGluJTIwU2ltU2NhbGUu" target="_blank">DOI: 10.11159/htff25.243</a>
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-4 py-2">
+                        <h3 class="font-bold text-lg text-slate-800">A Chevron-Actuated Microconveyor for Precise Wafer-Scale Microfactory Transportation</h3>
+                        <p class="text-slate-500 text-sm">Mechanical Engineering Research Symposium 2025 (MERS 2025), Department of Mechanical Engineering, University of Moratuwa.</p>
+                        <p class="text-slate-500 text-sm">(First author)</p>
+                        <p>accepted</p>
+                    </div>
+                </div>
+                <!---->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-4 py-2">
+                        <h3 class="font-bold text-lg text-slate-800">WS Ray: Extending Human Perception with a Teleoperated Underwater Drone for Subaquatic Environments</h3>
+                        <p class="text-slate-500 text-sm">International Conference on Automation Science and Engineering (CASE 2026).</p>
+                        <p class="text-slate-500 text-sm">(First author)</p>
+                        <p>Under Review</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proposals" class="page-section">
+            <div class="py-12 max-w-6xl mx-auto px-4">
+                <h1 class="text-4xl font-bold text-slate-900 mb-12">Research Proposals</h1>
+
+                <div class="space-y-16">
+                    
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                        <div class="w-full md:w-1/2">
+                            <div class="aspect-video bg-blue-100 rounded-2xl overflow-hidden shadow-sm border border-blue-200">
+                                <img src="assets/images/air.png" alt="air" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-600 uppercase bg-blue-100 rounded-full">
+                                flying squirrel
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-4">Multimodal Bio-inspired Quadrotors</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Unmanned Aerial Vehicles (UAVs), particularly multi-rotor platforms, face inherent limitations in performing 
+                                critical tasks such as infrastructure inspection and long-duration environmental monitoring due to constrained 
+                                flight endurance and difficulties with controlled perching in unstructured, dynamic environments. While 
+                                avian-inspired flight provides a common benchmark for bio-mimicry, the complex wing kinematics of birds often 
+                                prove incompatible with the rigid-frame constraints of Vertical Take-Off and Landing (VTOL) quadrotors. 
+                                This research proposes an alternative morphological adaptation inspired by the flying squirrel (Pteromyini), 
+                                whose four-limb tethered membrane, or patagium, and versatile tail offer a morphological blueprint that aligns 
+                                naturally with the structural symmetry of quadrotor drones. This work aims to investigate the development of a 
+                                bio-inspired UAV that integrates a deployable, flexible patagium and an active multi-degree-of-freedom tail to 
+                                enable energy-efficient maneuverable gliding transitions from active rotor-driven flight. Ultimately, this 
+                                research seeks to facilitate safe perching on surfaces ranging from horizontal to vertical orientations, 
+                                enhancing mission endurance and environmental interaction in complex settings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--<div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                        <div class="w-full md:w-1/2">
+                            <div class="aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                                <img src="path/to/swarm-robotics.jpg" alt="Bio-inspired Swarm Behavior" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-slate-600 uppercase bg-slate-100 rounded-full">
+                                Future Concept
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-4">Bio-inspired Swarm Intelligence</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Applying animal locomotion and swarm behavior principles to robotic platforms. 
+                                This includes developing Model Predictive Control (MPC) frameworks for adaptive coordination.
+                            </p>
+                        </div>
+                    </div>-->
+
+                </div>
+            </div>
+        </section>
+
+        <section id="moments" class="page-section">
+            <div class="py-12 max-w-6xl mx-auto px-4">
+                <h1 class="text-4xl font-bold text-slate-900 mb-8">Moments</h1>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    
+                    <div class="group">
+                        <div class="aspect-square bg-slate-200 rounded-xl flex items-center justify-center overflow-hidden mb-3">
+                            <img 
+                                src="assets/images/graduation.jpeg" 
+                                alt="Graduation Day">
+                        </div>
+                        <div class="px-1">
+                            <h4 class="font-bold text-slate-900 text-sm md:text-base">Graduation Day</h4>
+                            <p class="text-slate-500 text-xs md:text-sm leading-tight">A memorable graduation day with Dr. Jayathilaka (Mechatronics Stream Coordinator), and Prof. Amarasinghe (Head of the Department of Mechanical Engineering).</p>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="aspect-square bg-slate-200 rounded-xl flex items-center justify-center overflow-hidden mb-3">
+                            <img 
+                                src="assets/images/MERS_2025.jpeg" 
+                                alt="MERS 2025">
+                        </div>
+                        <div class="px-1">
+                            <h4 class="font-bold text-slate-900 text-sm md:text-base">MERS 2025</h4>
+                            <p class="text-slate-500 text-xs md:text-sm leading-tight">Presenting my research work at the MERS 2025 poster presentation.</p>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="aspect-square bg-slate-200 rounded-xl flex items-center justify-center overflow-hidden mb-3">
+                            <img 
+                                src="assets/images/MERCon_2025.jpg" 
+                                alt="MERCon_2025">
+                        </div>
+                        <div class="px-1">
+                            <h4 class="font-bold text-slate-900 text-sm md:text-base">MERCon 2025</h4>
+                            <p class="text-slate-500 text-xs md:text-sm leading-tight">Honored to receive the Best Paper Award at MERCon 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="aspect-square bg-slate-200 rounded-xl flex items-center justify-center overflow-hidden mb-3">
+                            <img 
+                                src="assets/images/shngDong.jpg" 
+                                alt="Shandong University of Science & Technology, China">
+                        </div>
+                        <div class="px-1">
+                            <h4 class="font-bold text-slate-900 text-sm md:text-base">Shandong University of Science & Technology, China</h4>
+                            <p class="text-slate-500 text-xs md:text-sm leading-tight">During the internship program with Mechatronics stream students and academic staff at Shandong University of Science & Technology, China.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-10 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center text-slate-500 text-sm">
+            &copy; 2026 K. D. S. H. M. Perera.
+        </div>
+    </footer>
+
+    <!-- Link to your separate JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>

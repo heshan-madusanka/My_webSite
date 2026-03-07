@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Page Section Visibility Logic */
+.page-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.page-section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Navigation Highlighting */
+.nav-link.active {
+    color: #2563eb; /* blue-600 */
+    border-bottom: 2px solid #2563eb;
+}
+
+/* High-end minimalist scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Group hover utility for research cards */
+.group:hover .fas.fa-play-circle {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
